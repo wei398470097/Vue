@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view v-wechat-title="$route.meta.title"/>
   </div>
 
 </template>
@@ -22,6 +22,7 @@
     }
   },false)
 </script>
-<style lang="stylus" rel="stylesheet/stylus" scoped>
-
+<style lang="stylus" rel="stylesheet/stylus">
+  body,html
+    background #fff;
 </style>

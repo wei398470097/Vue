@@ -7,6 +7,9 @@ export default new Router({
   routes: [
     {
       path: '/',
+      meta: {
+        title: '调查问卷'
+      },
       component: Home,
     }
   ]

@@ -8,7 +8,12 @@ import store from './store'
 import './common/stylus/index.styl'
 //移动端适配
 import 'lib-flexible/flexible.js'
+import { Checkbox, CheckboxGroup,RadioGroup, Radio } from 'vant';
 Vue.config.productionTip = false
+
+
+Vue.use(Checkbox).use(CheckboxGroup).use(RadioGroup).use(Radio);
+Vue.use(require('vue-wechat-title'))
 /*vant-ui*/
 /*import { Tab, Tabs, Stepper ,PullRefresh ,List,Toast} from 'vant';
 Vue.use(Tab).use(Tabs).use(Stepper).use(PullRefresh).use(List).use(Toast)*/
